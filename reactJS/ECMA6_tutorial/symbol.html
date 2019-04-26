@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var sim1 = Symbol();
+        var sim2 = Symbol();
+        var sim3 = Symbol();
+
+        console.log(Symbol("foo") === Symbol("foo"));
+
+        var sym = Symbol("foo");
+        console.log(typeof sym);
+        var symObj = Object(sym);
+        console.log(typeof symObj);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

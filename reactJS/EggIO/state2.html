@@ -1,0 +1,23 @@
+
+<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+<script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+<div id="root"></div>
+<script type="text/babel">
+
+    function StopWatch() {
+        return (
+            <div>
+                <label>0ms</label>
+                <label>Start</label>
+                <label>Clear</label>
+            </div>
+        )
+    }
+
+    const element = <StopWatch running={true} />
+    ReactDOM.render(
+        element,
+        document.getElementById('root')
+    ); 
+</script>   

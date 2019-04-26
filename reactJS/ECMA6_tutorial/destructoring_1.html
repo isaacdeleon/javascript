@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        let foo = ['uno','dos','tres'];
+        let [one,two,three] = foo;
+        console.log(one);
+        console.log(two);
+
+
+        let modulo = {
+            cuadrado(lon) {console.log(lon*lon);},
+            circulo(radio) {console.log(radio* Math.PI);},
+            texto(text) {console.log(text);}
+        }
+
+        let {cuadrado, texto, circulo} = modulo;
+        cuadrado(5);
+        texto('hola');
+        circulo(10);
+
+        let juana = {nombre: 'juana', paterno: 'Perez'};
+        let juan = {nombre: 'juan', paterno: 'Lopez', materno: 'Perez'};
+
+        nombreCompleto = ({nombre, paterno, materno = 'N/A'}) => {
+            console.log(`Hola ${nombre} ${paterno} ${materno}`);
+        }
+
+        nombreCompleto(juana);
+        nombreCompleto(juan);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

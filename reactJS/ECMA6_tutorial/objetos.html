@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var x = 10, y = 20;
+
+        //antes
+        obj = {x:x, y:y};
+        //ahora
+        obj = {x, y};
+
+        console.log(obj.x, obj.y);
+
+        obj = {
+            suma (a, b) {return a + b},
+            multiplica (x, y) {return x * y},
+            *num (x, y){}
+        }
+
+        console.log(obj.suma(10, 3));
+        console.log(obj.multiplica(10, 3));
+
+        numRandom = () => {
+            return Math.floor(Math.random()*10);
+        }
+
+        let objFoo = {
+            foo: "bar",
+            ["id" + numRandom()]: 4
+        }
+
+        console.log(objFoo);
+
+
+        var o1 = {a: 1};
+        var o2 = {b: 2};
+        var o3 = {c: 3};
+
+        var objAssing = Object.assign(o1,o2,o3);
+        console.log(objAssing);
+        console.log(o1);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
