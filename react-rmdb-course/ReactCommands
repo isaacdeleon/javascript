@@ -1,0 +1,11 @@
+React Commands
+
+
+#install dependencies
+npm install 
+
+#start app
+npm start
+
+#construir proyect
+npm run build
