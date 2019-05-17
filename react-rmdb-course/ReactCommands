@@ -9,3 +9,6 @@ npm start
 
 #construir proyect
 npm run build
+
+#
+npm run build && npm run deploy
